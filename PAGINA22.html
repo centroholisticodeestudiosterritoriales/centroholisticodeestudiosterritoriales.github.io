@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centro Holístico de Estudios Territoriales</title>
+    <!-- Favicon personalizado -->
+    <link rel="icon" href="img/favicon.png" type="image/png"> <!-- Si es un PNG -->
+    <!-- O -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> <!-- Si es un .ico -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles_carrusel_head.css">
     <link rel="stylesheet" href="styles_page.css">
     <link rel="stylesheet" href="styles_cards_color.css">
-	
+
 </head>
 <body>
 
@@ -54,18 +58,21 @@
     <div id="textCarousel" class="carousel slide" data-ride="carousel">
          <div class="carousel-inner">
             <div class="carousel-item active">
+                <img src="8.JPG" alt="Imagen 1">
+            </div>
+			
+            <div class="carousel-item">
                 <img src="100_6027.JPG" alt="Imagen 2">
             </div>
             <div class="carousel-item">
                 <img src="100_5489.JPG" alt="Imagen 3">
             </div>
-            <div class="carousel-item">
+			<div class="carousel-item">
                 <img src="9.JPG" alt="Imagen 3">
             </div>
-            <div class="carousel-item">
+			<div class="carousel-item">
                 <img src="21.JPG" alt="Imagen 3">
             </div>
-	 
         </div>
         <a class="carousel-control-prev" href="#textCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -78,79 +85,249 @@
     </div>
 
     <div class="carousel-text">
-        <h2>Impulsando la sostenibilidad territorial</h2>
-        <p>Investigación y soluciones integrales para la planificación territorial</p>
+        <h1>Impulsando la sostenibilidad territorial</h1>
+        <p>Soluciones integrales para la planificación</p>
     </div>
 </section>
 
 
+<!-- Importación de Google Fonts y FontAwesome para los iconos -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- About Us -->
-    <section id="about">
-        <div class="container">
-            <h2>Nosotros</h2>
-            <p>El Centro Holístico de Estudios Territoriales es una empresa que opera en toda la República Mexicana, cuenta con un equipo de trabajo compuesto por Geógrafos, Antropólogos, Sociólogos, Biólogos y Ecólogos. Ofrece servicios de asesoría, consultoría y capacitación en planificación territorial dirigidas a gobiernos en todos sus niveles, así como a los sectores público, privado y social. Nuestro enfoque integral basado en una visión sistémica ofrece soluciones completas que abarcan un análisis multidimensional del territorio. Por medio de metodologías científicas y herramientas innovadoras generamos conocimiento geográfico útil que se ajuste a las necesidades de cada cliente.</p>
-            <p><strong>Misión:</strong> Promover un desarrollo territorial sostenible y equilibrado, mediante una gestión eficiente e innovadora, asegurar que el territorio mexicano mantenga su vitalidad y riqueza natural. Nuestro compromiso es con la resiliencia y la prosperidad, asegurando que cada decisión contribuya a un legado duradero.
-			
-			<p> <strong>Visión:</strong> Revolucionar la gestión de recursos y la planificación territorial, contribuyendo a la sostenibilidad ambiental y al desarrollo equitativo tanto a nivel local como global. A través de enfoques interdisciplinarios, multidisciplinarios y transdisciplinarios combinamos el conocimiento local con la experiencia científica para desarrollar estrategias innovadoras que promuevan el uso sostenible del territorio.
-              </p>
-        </div>
+
+
+
+<style>
+    /* Estilos generales */
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    h2 {
+        font-weight: 600;
+        color: #0f0e0e;
+    }
+    
+	
+	h3 {
+        font-weight: 600;
+        color: #0f0e0e;
+    }
+
+    /* Estilo para las tarjetas */
+    .card {
+        border: none;
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body {
+        color: black; /* Letra negra */
+        padding: 30px;
+    }
+
+    .card-title {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .card-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    /* Fondo degradado de azules para las tarjetas */
+    .card-bg {
+        background: linear-gradient(135deg, #4facfe, #00f2fe); /* Degradado de azul claro a oscuro */
+    }
+
+    /* Sección Nosotros */
+    #about {
+        background-color: #f9f9f9;
+        padding: 80px 0;
+    }
+
+    /* Sección Proyectos */
+    #map {
+        background-color: #f0f4f7;
+        padding: 60px 0;
+    }
+
+    /* Efectos de hover en botones o imágenes */
+    img {
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive para columnas */
+    @media (max-width: 768px) {
+        .card-title {
+            font-size: 20px;
+        }
+
+        .card-icon {
+            font-size: 30px;
+        }
+    }
+
+    #services {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+    }
+
+    #services h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1.8em;
+        color: #000000;
+    }
+
+    #services ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    #services li {
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    #services summary {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    #services p {
+        text-align: justify;
+        margin-top: 10px;
 		
-		</div>
-    </section>
+		
+    }
+	
+</style>
+
+
+
+<!-- About Us -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nosotros</h2>
+        <div class="row">
+            <!-- Tarjeta 1 - Quiénes Somos -->
+            <div class="col-lg-4 mb-4">
+                <div class="card card-bg shadow-lg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users card-icon"></i>
+                        <h4 class="card-title">Quiénes Somos</h4>
+                        <p class="card-text">El Centro Holístico de Estudios Territoriales es una empresa que opera en toda la República Mexicana, con un equipo de trabajo compuesto por Geógrafos, Antropólogos, Sociólogos, Biólogos y Ecólogos. Ofrecemos asesoría, consultoría y capacitación en planificación territorial a gobiernos y sectores públicos y privados.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 - Misión -->
+            <div class="col-lg-4 mb-4">
+                <div class="card card-bg shadow-lg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-bullseye card-icon"></i>
+                        <h4 class="card-title">Misión</h4>
+                        <p class="card-text">Promover un desarrollo territorial sostenible y equilibrado, mediante una gestión eficiente e innovadora, asegurar que el territorio mexicano mantenga su vitalidad y riqueza natural, por eso, buscamos que cada decisión contribuya a un legado duradero.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3 - Visión -->
+            <div class="col-lg-4 mb-4">
+                <div class="card card-bg shadow-lg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-globe card-icon"></i>
+                        <h4 class="card-title">Visión</h4>
+                        <p class="card-text">Nuestro enfoque integral basado en una visión sistémica ofrece soluciones completas que abarcan un análisis multidimensional. Por medio de un enfoque transdisciplinar combinamos el conocimiento local con la experiencia científica para desarrollar estrategias innovadoras que promuevan el uso sostenible del territorio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
    <!-- Map Section -->
     <section id="map">
         <div class="container">
             <h2></h2>
             <p> </p>
-            <img src="ca.jpeg" class="d-block w-100" alt="Proyecto 1">
+            <img src="MIT.png" class="d-block w-100" alt="Proyecto 1">
         </div>
     </section>
 
-
 <section id="services">
     <div class="container">
-        <h2>Departamentos</h2>
-        <ul style="list-style-type: none; padding-left: 0;">
-            <li style="margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+         <h2>Departamentos</h2>
+        <ul>
+            <li>
                 <details>
-                    <summary><strong>Departamento de Evaluación y Gestión Territorial</strong></summary>
-                    <p style="text-align: justify;">El Departamento de Evaluación y Gestión Territorial ofrece una gama completa de servicios diseñados para abordar los desafíos ambientales, sociales y económicos que enfrentan proyectos y políticas en diversos contextos del territorio. El departamento se dedica a garantizar que los proyectos y políticas no solo cumplan con las normativas vigentes, sino que también contribuyan a un desarrollo equilibrado y sostenible. Con un enfoque multidisciplinario, ofrecemos soluciones que abarcan desde la planificación estratégica hasta la implementación práctica de diversos instrumentos de planeación territorial. Garantizando soluciones efectivas y adaptadas en múltiples escalas espaciales y temporales.</p>
+                    <summary>
+                        <i class="fas fa-clipboard-list"></i> Departamento de Evaluación y Gestión Territorial
+                    </summary>
+                    <p>El Departamento de Evaluación y Gestión Territorial ofrece una gama completa de servicios diseñados para abordar los desafíos ambientales, sociales y económicos que enfrentan proyectos y políticas en diversos contextos del territorio. El departamento se dedica a garantizar que los proyectos y políticas no solo cumplan con las normativas vigentes, sino que también contribuyan a un desarrollo equilibrado y sostenible. Con un enfoque multidisciplinario, ofrecemos soluciones que abarcan desde la planificación estratégica hasta la implementación práctica de diversos instrumentos de planeación territorial. Garantizando soluciones efectivas y adaptadas en múltiples escalas espaciales y temporales.</p>
                 </details>
             </li>
-            <li style="margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+            <li>
                 <details>
-                    <summary><strong>Departamento de Monitoreo, Evaluación y Conservación de Ecosistemas</strong></summary>
-                    <p style="text-align: justify;">El Departamento de Monitoreo, Evaluación y Conservación de Ecosistemas se dedica a la preservación integral de especies, ecosistemas y paisajes. Con un enfoque multidisciplinario, este departamento lidera la evaluación detallada de la salud ambiental, el monitoreo continuo de la biodiversidad y la implementación de estrategias avanzadas para la conservación y restauración. Ofrecemos soluciones efectivas que aseguren la sostenibilidad y resiliencia de los ecosistemas en todos los niveles, desde lo local hasta lo regional, protegiendo así el equilibrio natural a corto, mediano y largo plazo.</p>
+                    <summary>
+                        <i class="fas fa-leaf"></i> Departamento de Monitoreo, Evaluación y Conservación de Ecosistemas
+                    </summary>
+                    <p>El Departamento de Monitoreo, Evaluación y Conservación de Ecosistemas se dedica a la preservación integral de especies, ecosistemas y paisajes. Con un enfoque multidisciplinario, este departamento lidera la evaluación detallada de la salud ambiental, el monitoreo continuo de la biodiversidad y la implementación de estrategias avanzadas para la conservación y restauración. Ofrecemos soluciones efectivas que aseguren la sostenibilidad y resiliencia de los ecosistemas en todos los niveles, desde lo local hasta lo regional, protegiendo así el equilibrio natural a corto, mediano y largo plazo.</p>
                 </details>
             </li>
-            <li style="margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+            <li>
                 <details>
-                    <summary><strong>Departamento de Tecnologías de la Información Geoespacial</strong></summary>
-                    <p style="text-align: justify;">El Departamento de Desarrollo y Gestión de Tecnologías de la Información Geoespacial proporciona soluciones tecnológicas avanzadas para el desarrollo y mantenimiento de infraestructuras de datos e información georreferenciada. Contamos con un equipo de expertos en Cartografía, Sistemas de Información Geográfica, Geomática y Percepción Remota que aseguran el cumplimiento de los más altos estándares nacionales e internacionales. Procesamos datos geoespaciales para obtener información y conocimiento valioso, ofreciendo también servicios de capacitación, automatización de geo-procesos y soporte técnico. Este departamento es fundamental para la creación de una infraestructura sólida de datos geoespaciales que apoya la planificación y la toma de decisiones informada.</p>
+                    <summary>
+                        <i class="fas fa-globe"></i> Departamento de Tecnologías de Información Geoespacial
+                    </summary>
+                    <p>El Departamento de Desarrollo y Gestión de Tecnologías de la Información Geoespacial proporciona soluciones tecnológicas avanzadas para el desarrollo y mantenimiento de infraestructuras de datos e información georreferenciada. Contamos con un equipo de expertos en Cartografía, Sistemas de Información Geográfica, Geomática y Percepción Remota que aseguran el cumplimiento de los más altos estándares nacionales e internacionales. Procesamos datos geoespaciales para obtener información y conocimiento valioso, ofreciendo también servicios de capacitación, automatización de geo-procesos y soporte técnico. Este departamento es fundamental para la creación de una infraestructura sólida de datos geoespaciales que apoya la planificación y la toma de decisiones informada.</p>
                 </details>
             </li>
-            <li style="margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+            <li>
                 <details>
-                    <summary><strong>Departamento de Análisis y Diagnóstico de Socioecosistemas</strong></summary>
-                    <p style="text-align: justify;">El Departamento de Diagnóstico y Análisis de Socioecosistemas se dedica a estudiar la interacción entre sociedad y ecosistemas con un enfoque sistémico para evaluar el impacto ambiental y social de diversas actividades, promoviendo el desarrollo en todos los niveles. Este departamento se centra en comprender cómo las actividades humanas afectan a los ecosistemas y cómo las condiciones ambientales influyen en la sociedad. A través de investigaciones y análisis detallados, buscamos promover prácticas que beneficien tanto a los ecosistemas como a las comunidades.</p>
+                    <summary>
+                        <i class="fas fa-chart-line"></i> Departamento de Análisis y Diagnóstico de Socioecosistemas
+                    </summary>
+                    <p>El Departamento de Diagnóstico y Análisis de Socioecosistemas se dedica a estudiar la interacción entre sociedad y ecosistemas con un enfoque sistémico para evaluar el impacto ambiental y social de diversas actividades, promoviendo el desarrollo en todos los niveles. Este departamento se centra en comprender cómo las actividades humanas afectan a los ecosistemas y cómo las condiciones ambientales influyen en la sociedad. A través de investigaciones y análisis detallados, buscamos promover prácticas que beneficien tanto a los ecosistemas como a las comunidades.</p>
                 </details>
             </li>
-            <li style="margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+            <li>
                 <details>
-                    <summary><strong>Departamento de Diseño y Gestión de Agroecosistemas Sostenibles</strong></summary>
-                    <p style="text-align: justify;">El Departamento de Diseño y Gestión de Agroecosistemas Sostenibles se especializa en la creación, evaluación y optimización de sistemas agrícolas que integran prácticas sostenibles, resilientes y adaptativas. Nuestro objetivo es fomentar la productividad agrícola mientras se conservan los recursos naturales y se promueve la sostenibilidad ambiental. Nuestro enfoque transdisciplinar ofrece servicios especializados para analizar, gestionar y diseñar agroecosistemas que respondan a las condiciones locales y regionales, además de los desafíos climáticos, optimizando tanto la eficiencia productiva como la salud ambiental.</p>
+                    <summary>
+                        <i class="fas fa-seedling"></i> Departamento de Diseño y Gestión de Agroecosistemas Sostenibles
+                    </summary>
+                    <p>El Departamento de Diseño y Gestión de Agroecosistemas Sostenibles se especializa en la creación, evaluación y optimización de agroecosistemas que integran prácticas sostenibles, resilientes y adaptativas. Nuestro objetivo es fomentar la productividad agrícola mientras se conservan los recursos naturales y se promueve la sostenibilidad ambiental. Nuestro enfoque transdisciplinar ofrece servicios especializados para analizar, gestionar y diseñar agroecosistemas que respondan a las condiciones locales y regionales, además de los desafíos climáticos, optimizando tanto la eficiencia productiva como la salud ambiental.</p>
                 </details>
             </li>
-            <li style="margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+            <li>
                 <details>
-                    <summary><strong>Departamento de Capacitación y Transferencia de Tecnologías</strong></summary>
-                    <p style="text-align: justify;">El Departamento de Capacitación y Transferencia de Tecnologías se especializa en brindar formación y soporte para la adopción de nuevas tecnologías que optimicen procesos en diferentes áreas. Ofrecemos servicios de formación en tecnologías avanzadas para que organizaciones y personas puedan adaptarse a los cambios tecnológicos de manera eficaz.</p>
+                    <summary>
+                        <i class="fas fa-graduation-cap"></i> Departamento de Capacitación y Transferencia de Tecnologías
+                    </summary>
+                    <p>El Departamento de Capacitación y Transferencia de Tecnologías se especializa en brindar formación y soporte para la adopción de nuevas tecnologías que optimicen procesos en diferentes áreas. Ofrecemos servicios de formación en geotecnologías para que organizaciones y personas puedan adaptarse a los cambios de manera eficaz.</p>
                 </details>
             </li>
         </ul>
     </div>
 </section>
+
 
 <section id="tarjetas">
 <div class="cards">
@@ -190,7 +367,7 @@
 
   <div class="card">
     <div class="card__image-holder">
-      <img class="card__image" src="reserva4.jpg" alt="mountain" />
+      <img class="card__image" src="reserva4.JPG" alt="mountain" />
     </div>
     <div class="card-title">
       <a href="#" class="toggle-info btn">
@@ -205,7 +382,6 @@
     <div class="card-flap flap1">
       <div class="card-description">
          <strong><br>   -Monitoreo de Biodiversidad y Recursos Naturales</br></strong>   
-	<strong><br>    -Ecología de la Restauración Aplicada a Ecosistemas Naturales</br></strong> 
         <strong><br>    -Estudios de Ecología del Paisaje</br></strong>   
         <strong><br>    -Planificación para el Aprovechamiento Forestal Sostenible</br></strong> 
       </div>
@@ -219,7 +395,7 @@
 
   <div class="card">
     <div class="card__image-holder">
-      <img class="card__image" src="norte.jpg" alt="field" />
+      <img class="card__image" src="norte.JPG" alt="field" />
     </div>
     <div class="card-title">
       <a href="#" class="toggle-info btn">
@@ -264,7 +440,7 @@
     <div class="card-flap flap1">
       <div class="card-description">
        <strong><br>    -Caracterización y Diagnóstico de Agroecosistemas</br></strong>  
-       <strong><br>    -Estudios Agroecológicos</br></strong>   
+       <strong><br>    -Estudios de la heterogeneidad Espacial de Agroecosistemas</br></strong>   
 	   <strong><br>    -Estudios Edafológicos y Geografía de Suelos</br></strong>
        <strong><br>    -Diseño de Agroecosistemas Sostenibles y Resilientes</br></strong>
       </div>
@@ -351,7 +527,7 @@
                     <img src="segbio3.png" class="d-block w-100" alt="Proyecto 1" style="height: 700px; object-fit: cover;">
                     <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.8); padding: 20px; border-radius: 10px;">
                         <h5 style="font-weight: bold; color: #f8f9fa; font-size: 1.75rem;">Mapeo de provincias, regiones y subregiones de México en diversas escalas</h5>
-                        <p style="color: #f8f9fa; font-size: 1.1rem;">En este proyecto trabajamos en una zonificación biofísica a nivel nacional, por medio del procesamiento y análisis de datos meteorológicos, edafológicos, topográficos y biogeográficos. A través de este proceso, se producirán múltiples mapas que capturen tanto las dinámicas macroescalares como los detalles microescalares, ofreciendo una herramienta cartográfica robusta y de libre acceso para la toma de decisiones informadas en la gestión del territorio nacional. </p>
+                        <p style="color: #f8f9fa; font-size: 1.1rem;">En este proyecto trabajamos en una zonificación biofísica a nivel nacional, por medio del procesamiento y análisis de datos meteorológicos, edafológicos, topográficos y biogeográficos se producirán múltiples mapas que capturen tanto las dinámicas macroescalares como los detalles microescalares, ofreciendo una herramienta cartográfica robusta y de libre acceso para la toma de decisiones informadas en la gestión del territorio nacional. </p>
                     </div>
                 </div>
 
@@ -360,11 +536,8 @@
                     <img src="cafetal.jpg" class="d-block w-100" alt="Proyecto 2" style="height: 700px; object-fit: cover;">
                     <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.8); padding: 20px; border-radius: 10px;">
                         <h5 style="font-weight: bold; color: #f8f9fa; font-size: 1.75rem;">Zonificaciones Agroecológicas para cultivos representativos del Estado de Veracruz</h5>
-                        <p style="color: #f8f9fa; font-size: 1.1rem;"> Este proyecto aborda la implementación de la zonificación agroecológica para optimizar sistemas productivos clave en el Estado de Veracruz, tales como el café de sombra, la milpa, el frijol, el chile y el limón, entre otros. A través de la identificación y clasificación de áreas según sus características agroecológicas, se busca adaptar de manera más precisa las prácticas agrícolas a las condiciones locales y regionales. Esto no solo mejora la eficiencia de la producción, sino que también promueve la sostenibilidad, integrando enfoques que respetan y potencian los ecosistemas naturales. En consecuencia, el proyecto contribuirá significativamente a incrementar la productividad y la resiliencia de la agricultura en Veracruz, beneficiando tanto a los productores como al medio ambiente. </p>
-                   
-		    
-		    
-		    </div>
+                        <p style="color: #f8f9fa; font-size: 1.1rem;">  Este proyecto explora y aplica el concepto de zonificación agroecológica para sistemas productivos como el café y los tipos de sombra más comunes. Al identificar y clasificar áreas en función de las características agroecológicas, se permite una adaptación más precisa de las prácticas agrícolas a las condiciones locales y regionales, promoviendo la sostenibilidad y la eficiencia. Por lo tanto, este proyecto contribuirá a mejorar la productividad para este cultivo en el Estado de Veracruz.</p>
+                    </div>
                 </div>
 
 
@@ -486,12 +659,17 @@
                 <ul class="list-unstyled">
                     <li>
                         <i class="fa fa-map-marker-alt"></i>
-                        <strong>Ciudad:</strong> <br> Arco Vial Sur #728, Col. Lomas Verdes, CP 91097<br> Xalapa, Veracruz, México </br>   
+                        <strong>Encuentranos en:</strong> <br> Arco Vial Sur #728 <br>Col. Lomas Verdes, CP 91097<br> Xalapa, Veracruz, México 
+                    </li>
+					 <li>
+                        
+                       M. en C. Fabiola Torres - M. en C. Geovanni Aguilar 
                     </li>
                     <li>
-                        <i class="fa fa-phone-alt"></i>
-                        <strong>Teléfonos:</strong> 2281202410 y 2281212921
+                        <i class="fa-solid fa-mobile"></i>
+                        <strong>Móvil:</strong> 2281212921 - 2281202410
                     </li>
+
                     <li>
                         <i class="fa fa-envelope"></i>
                         <strong>Correo electrónico:</strong> c.h.estudiosterritoriales@gmail.com
@@ -504,50 +682,53 @@
                 <!-- Espacio para el enlace al formulario de Google -->
                 <h4>Formulario de Google</h4>
                 <p>Si prefieres, puedes completar nuestro formulario en Google: 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQ3k0NE-P-QUR0_XPaGQx1zBHwXP1OFV-sL4hVF96AQG3SOw/viewform?usp=sf_link" target="_blank">Haz clic aquí para acceder al formulario</a>.
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQ3k0NE-P-QUR0_XPaGQx1zBHwXP1OFV-sL4hVF96AQG3SOw/viewform?usp=sf_link" target="_blank">Haz clic aquí</a>.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Footer -->
-<footer>
+
+
+<!-- Footer Mejorado -->
+<footer style="background: linear-gradient(135deg, #003366, #0066cc); color: #f8f9fa; padding: 30px 0;">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-6">
-                <p>&copy; 2024, Centro Holístico de Estudios Territoriales S.A.S de C.V</p>
-                <p>centroholisticoestudiosterritoriales.com</p>
-                <p>Todos los derechos reservados.</p>
-                <p><a href="#contact">Contacto</a> | <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+                <h6 style="font-weight: 600; font-size: 1.1rem;">Centro Holístico de Estudios Territoriales S.A.S de C.V</h6>
+                <p style="margin-bottom: 5px;">centroholisticoestudiosterritoriales.com</p>
+                <p style="font-size: 0.9rem;">&copy; 2024, Todos los derechos reservados.</p>
             </div>
-            <div class="col-md-6 text-md-right">
-                <div class="social-media">
-                    <a href="#" class="social-icon" target="_blank" title="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" title="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
+            <div class="col-md-6 text-md-end text-center">
+                <!-- Imagen del logo del globo -->
+                <img src="Globe_icon_GRAY_1.png" alt="Logo del Globo" style="width: 100px; height: auto; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
             </div>
         </div>
     </div>
 </footer>
 
 
+<!-- Añadir este script al final del body para asegurar que se ejecute después de cargar el contenido -->
+<script>
+    // Agregar un evento de clic a todos los botones de enlace
+    document.querySelectorAll('.btn.btn-primary').forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();  // Prevenir el comportamiento por defecto del enlace
+            var url = this.href;  // Obtener la URL del enlace
+            window.open(url, '_blank');  // Abrir la URL en una nueva pestaña
+        });
+    });
+</script>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
 
