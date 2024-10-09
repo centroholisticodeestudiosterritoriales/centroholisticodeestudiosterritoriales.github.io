@@ -681,11 +681,31 @@
     </div>
 </footer>
 
+<!-- Añadir este script al final del body para asegurar que se ejecute después de cargar el contenido -->
+<script>
+    // Agregar un evento de clic a todos los botones de enlace
+    document.querySelectorAll('.btn.btn-primary').forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();  // Prevenir el comportamiento por defecto del enlace
+            var url = this.href;  // Obtener la URL del enlace
+            window.open(url, '_blank');  // Abrir la URL en una nueva pestaña
+        });
+    });
+</script>
+
+<script>
+    // Esconder el menú cuando se hace clic en un enlace (modo móvil)
+    $(document).ready(function () {
+        $('.navbar-nav .nav-link').on('click', function () {
+            $('.navbar-collapse').collapse('hide'); // Contrae el menú
+        });
+    });
+</script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
-<script src="script2.js"></script>
+
 
 </body>
 </html>
