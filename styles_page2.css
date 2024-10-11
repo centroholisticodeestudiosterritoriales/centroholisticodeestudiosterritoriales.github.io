@@ -292,7 +292,7 @@ footer p {
 }
 
 /* Responsive Design for Tablets */
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
     header h1 {
         font-size: 4vw;
     }
@@ -335,7 +335,7 @@ footer p {
 }
 
 /* Responsive Design for Phones */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     header h1 {
         font-size: 6vw;
     }
