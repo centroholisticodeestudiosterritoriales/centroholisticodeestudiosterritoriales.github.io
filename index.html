@@ -153,44 +153,47 @@ footer a:hover {
 
 
 <style>
-    /* Ajuste general para la imagen dentro de cada servicio */
-    .service-img {
-        max-width: 40%;   /* La imagen no se desbordará más allá del contenedor */
-        height: auto;      /* Mantiene la relación de aspecto */
-        border-radius: 8px; /* Bordes redondeados */
-    }
 
-    /* Para pantallas más grandes */
-    @media (min-width: 768px) {
-        .service-item {
-            text-align: center;
-        }
-        .service-img {
-            max-width: 40%;  /* Controla el tamaño máximo de la imagen en pantallas más grandes */
-            margin: 0 auto;  /* Centra la imagen */
-        }
-    }
 
-    /* Para pantallas pequeñas */
-    @media (max-width: 767px) {
-        .service-item {
-            text-align: center;
-        }
-        .service-img {
-            max-width: 100%;  /* Asegura que las imágenes no excedan el ancho del contenedor */
-            margin-bottom: 10px; /* Espacio debajo de la imagen */
-        }
-    }
+/* Ajuste general para la imagen dentro de cada servicio */
+.service-img {
+    max-width: 40%;   /* Cambié de 100% a 60% para hacer las imágenes más pequeñas */
+    height: auto;      /* Mantiene la relación de aspecto */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 0 auto;     /* Centra la imagen */
+}
 
-    /* Ajuste de los iconos */
-    .icon-image {
-        margin-bottom: 15px;
-    }
-
-    /* Espaciado entre los servicios */
+/* Para pantallas más grandes */
+@media (min-width: 768px) {
     .service-item {
-        margin-bottom: 30px;
+        text-align: center;
     }
+    .service-img {
+        max-width: 50%;  /* Cambié el tamaño máximo de la imagen en pantallas grandes */
+        margin: 0 auto;  /* Centra la imagen */
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 767px) {
+    .service-item {
+        text-align: center;
+    }
+    .service-img {
+        max-width: 80%;  /* Cambié el tamaño de la imagen en pantallas más pequeñas */
+        margin-bottom: 10px; /* Espacio debajo de la imagen */
+    }
+}
+
+/* Ajuste de los iconos */
+.icon-image {
+    margin-bottom: 15px;
+}
+
+/* Espaciado entre los servicios */
+.service-item {
+    margin-bottom: 30px;
+}
 </style>
 	
 <meta name="google-site-verification" content="5WpQc9uhBIzX6iS4M4sE_0zgrtzMfDvnJRvKyx62BRE" />
@@ -369,8 +372,6 @@ footer a:hover {
 </section>
 
 
-
-
 <section id="services" class="page-section">
     <div class="container">
         <div class="heading text-center">
@@ -384,7 +385,7 @@ footer a:hover {
                 <div class="service-item">
                     <div class="icon-image">
                         <i class="fa fa-map-marker fa-2x circle"></i>
-                        <img src="images\mina2.jpg" alt="Imagen Servicio 1" class="service-img">
+                        <img src="images\400.png" alt="Imagen Servicio 1" class="service-img">
                     </div>
                     <h3>Departamento de Evaluación y Gestión Territorial</h3>
                     <button onclick="toggleList('service-list-1')" class="btn btn-primary">Mostrar/Ocultar Servicios</button>
@@ -403,7 +404,7 @@ footer a:hover {
                 <div class="service-item">
                     <div class="icon-image">
                         <i class="fa fa-leaf fa-2x circle"></i>
-                        <img src="images\reserva4.jpg" alt="Imagen Servicio 2" class="service-img">
+                        <img src="images\400.png" alt="Imagen Servicio 2" class="service-img">
                     </div>
                     <h3>Departamento de Evaluación y Conservación de Ecosistemas</h3>
                     <button onclick="toggleList('service-list-2')" class="btn btn-primary">Mostrar/Ocultar Servicios</button>
@@ -422,7 +423,7 @@ footer a:hover {
                 <div class="service-item">
                     <div class="icon-image">
                         <i class="fa fa-database fa-2x circle"></i>
-                        <img src="images\norte.jpg" alt="Imagen Servicio 3" class="service-img">
+                        <img src="images\400.png" alt="Imagen Servicio 3" class="service-img">
                     </div>
                     <h3>Departamento de Tecnologías de la Información Geográfica</h3>
                     <button onclick="toggleList('service-list-3')" class="btn btn-primary">Mostrar/Ocultar Servicios</button>
@@ -441,7 +442,7 @@ footer a:hover {
                 <div class="service-item">
                     <div class="icon-image">
                         <i class="fa fa-tree fa-2x circle"></i>
-                        <img src="images\aes5.jpg" alt="Imagen Servicio 4" class="service-img">
+                        <img src="images\400.png" alt="Imagen Servicio 4" class="service-img">
                     </div>
                     <h3>Departamento de Agroecosistemas Sostenibles</h3>
                     <button onclick="toggleList('service-list-4')" class="btn btn-primary">Mostrar/Ocultar Servicios</button>
@@ -460,7 +461,7 @@ footer a:hover {
                 <div class="service-item">
                     <div class="icon-image">
                         <i class="fa fa-users fa-2x circle"></i>
-                        <img src="images\IMG_20133.jpg" alt="Imagen Servicio 5" class="service-img">
+                        <img src="images\400.png" alt="Imagen Servicio 5" class="service-img">
                     </div>
                     <h3>Departamento de Análisis y Diagnóstico de Socioecosistemas</h3>
                     <button onclick="toggleList('service-list-5')" class="btn btn-primary">Mostrar/Ocultar Servicios</button>
@@ -479,14 +480,14 @@ footer a:hover {
                 <div class="service-item">
                     <div class="icon-image">
                         <i class="fa fa-cloud fa-2x circle"></i>
-                        <img src="images\IMG_0937.jpg" alt="Imagen Servicio 6" class="service-img">
+                        <img src="images\400.png" alt="Imagen Servicio 6" class="service-img">
                     </div>
                     <h3>Departamento de Capacitación y Transferencia de Tecnologías</h3>
                     <button onclick="toggleList('service-list-6')" class="btn btn-primary">Mostrar/Ocultar Servicios</button>
                     <ul id="service-list-6" style="display: none; list-style-type: none; padding-left: 0;">
-                        <li>-Capacitación para el uso de Sistemas de Información Geográfica</li>
-                        <li>-Capacitación para el uso e interpretación de Información Geográfica</li>
-                        <li>-Fortalecimiento de capacidades para el monitoreo de recursos naturales con teledetección</li>
+                        <li>-Cursos de Capacitación para el uso de Tecnologías de la Información Geográfica (niveles básicos, intermedios y avanzados)</li>
+                        <li>-Cursos de Capacitación para la interpretación y uso de información geográfica</li>
+                        <li>-Fortalecimiento de capacidades locales para el monitoreo de recursos naturales a nivel comunitario</li>
                     </ul>
                 </div>
             </div>
@@ -494,6 +495,7 @@ footer a:hover {
         </div>
     </div>
 </section>
+
 
 <section id="portfolio" class="page-section section appear clearfix">    
     <div class="container">
