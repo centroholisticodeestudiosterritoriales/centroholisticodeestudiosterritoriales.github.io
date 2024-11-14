@@ -152,6 +152,46 @@ footer a:hover {
 </style>
 
 
+<style>
+    /* Ajuste general para la imagen dentro de cada servicio */
+    .service-img {
+        max-width: 100%;   /* La imagen no se desbordará más allá del contenedor */
+        height: auto;      /* Mantiene la relación de aspecto */
+        border-radius: 8px; /* Bordes redondeados */
+    }
+
+    /* Para pantallas más grandes */
+    @media (min-width: 768px) {
+        .service-item {
+            text-align: center;
+        }
+        .service-img {
+            max-width: 80%;  /* Controla el tamaño máximo de la imagen en pantallas más grandes */
+            margin: 0 auto;  /* Centra la imagen */
+        }
+    }
+
+    /* Para pantallas pequeñas */
+    @media (max-width: 767px) {
+        .service-item {
+            text-align: center;
+        }
+        .service-img {
+            max-width: 100%;  /* Asegura que las imágenes no excedan el ancho del contenedor */
+            margin-bottom: 10px; /* Espacio debajo de la imagen */
+        }
+    }
+
+    /* Ajuste de los iconos */
+    .icon-image {
+        margin-bottom: 15px;
+    }
+
+    /* Espaciado entre los servicios */
+    .service-item {
+        margin-bottom: 30px;
+    }
+</style>
 	
 <meta name="google-site-verification" content="5WpQc9uhBIzX6iS4M4sE_0zgrtzMfDvnJRvKyx62BRE" />
 
@@ -606,16 +646,20 @@ footer a:hover {
 </footer>
 	<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
 	
+
+
 <script>
-	function toggleList(id) {
-		const list = document.getElementById(id);
-		if (list.style.display === "none") {
-			list.style.display = "block";
-		} else {
-			list.style.display = "none";
-		}
-	}
+        // Función para alternar la visibilidad de la lista de servicios
+        function toggleList(id) {
+            const list = document.getElementById(id);
+            if (list.style.display === "none" || list.style.display === "") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        }
 </script>
+
 
 <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
 <script src="js/modernizr-latest.js"></script>
