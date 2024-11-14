@@ -125,6 +125,34 @@ footer a:hover {
 }
 </style>
 
+
+<style>
+@media (max-width: 768px) {
+    .portfolio-items .col-xs-12 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .portfolio-desc {
+        text-align: center;
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+</style>
+
+
+	
 <meta name="google-site-verification" content="5WpQc9uhBIzX6iS4M4sE_0zgrtzMfDvnJRvKyx62BRE" />
 
 </head>
@@ -404,120 +432,108 @@ footer a:hover {
             <h2>Nuestra experiencia</h2>
             <p>A continuación, presentamos algunas publicaciones científicas y colaboraciones generadas por los integrantes de nuestro equipo técnico:</p>
         </div>
-        <!-- 
-        <div class="row">
-            <nav id="filter" class="col-md-12 text-center">
-               			   <ul>
-                    <li><a href="#" class="current btn-theme btn-small" data-filter="*">Todos</a></li>
-                    <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Diseño Web</a></li>
-                    <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Fotografía</a></li>
-                    <li><a href="#" class="btn-theme btn-small" data-filter=".print">Impresión</a></li>
-                </ul>
-            </nav>
-            -->
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="portfolio-items isotopeWrapper clearfix" id="3">
-                        
-                        <!-- Tarjeta 1 -->
-                        <article class="col-md-4 isotopeItem webdesign">
-                            <div class="portfolio-item">
-                                <img src="ART1.png" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-info">
-                                        <a href="ART1.png" class="fancybox" title="Descripción del proyecto 1">
-                                            <h5></h5>
-                                            <i class="fa fa-plus-circle fa-2x"></i>
-                                        </a>
-                                        <p><a href="https://app.dimensions.ai/details/publication/pub.1122317625">Ver más</a></p>
-                                    </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="portfolio-items isotopeWrapper clearfix" id="3">
+                    
+                    <!-- Tarjeta 1 -->
+                    <article class="col-md-4 col-sm-6 col-xs-12 isotopeItem webdesign">
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/ART1.png" alt="" class="img-responsive" />
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <a href="images/portfolio/ART1.png" class="fancybox" title="Descripción del proyecto 1">
+                                        <h5>Proyecto 1</h5>
+                                        <i class="fa fa-plus-circle fa-2x"></i>
+                                    </a>
+                                    <p><a href="https://app.dimensions.ai/details/publication/pub.1122317625">Ver más</a></p>
                                 </div>
                             </div>
-                        </article>
+                        </div>
+                    </article>
 
-                        <!-- Tarjeta 2 -->
-                        <article class="col-md-4 isotopeItem photography">
-                            <div class="portfolio-item">
-                                <img src="ART2.png" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-info">
-                                        <a href="ART2.png" class="fancybox" title="Descripción del proyecto 2">
-                                            <h5></h5>
-                                            <i class="fa fa-plus-circle fa-2x"></i>
-                                        </a>
-                                        <p><a href="https://ujcontent.uj.ac.za/esploro/outputs/journalArticle/How-green-are-our-laws-Presenting/9921907007691?institution=27UOJ_INST">Ver más</a></p>
-                                    </div>
+                    <!-- Tarjeta 2 -->
+                    <article class="col-md-4 col-sm-6 col-xs-12 isotopeItem photography">
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/ART2.png" alt="" class="img-responsive" />
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <a href="images/portfolio/ART2.png" class="fancybox" title="Descripción del proyecto 2">
+                                        <h5>Proyecto 2</h5>
+                                        <i class="fa fa-plus-circle fa-2x"></i>
+                                    </a>
+                                    <p><a href="https://ujcontent.uj.ac.za/esploro/outputs/journalArticle/How-green-are-our-laws-Presenting/9921907007691?institution=27UOJ_INST">Ver más</a></p>
                                 </div>
                             </div>
-                        </article>
+                        </div>
+                    </article>
 
-                        <!-- Tarjeta 3 -->
-                        <article class="col-md-4 isotopeItem print">
-                            <div class="portfolio-item">
-                                <img src="ART3.png" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-info">
-                                        <a href="ART3.png" class="fancybox" title="Descripción del proyecto 3">
-                                            <h5></h5>
-                                            <i class="fa fa-plus-circle fa-2x"></i>
-                                        </a>
-                                        <p><a href="https://revistas.chapingo.mx/forestales/article/view/r.rchscfa.2021.02.010">Ver más</a></p>
-                                    </div>
+                    <!-- Tarjeta 3 -->
+                    <article class="col-md-4 col-sm-6 col-xs-12 isotopeItem print">
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/ART3.png" alt="" class="img-responsive" />
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <a href="images/portfolio/ART3.png" class="fancybox" title="Descripción del proyecto 3">
+                                        <h5>Proyecto 3</h5>
+                                        <i class="fa fa-plus-circle fa-2x"></i>
+                                    </a>
+                                    <p><a href="https://revistas.chapingo.mx/forestales/article/view/r.rchscfa.2021.02.010">Ver más</a></p>
                                 </div>
                             </div>
-                        </article>
+                        </div>
+                    </article>
 
-                        <!-- Tarjeta 4 -->
-                        <article class="col-md-4 isotopeItem webdesign">
-                            <div class="portfolio-item">
-                                <img src="ART4.png" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-info">
-                                        <a href="ART4.png" class="fancybox" title="Descripción del proyecto 4">
-                                            <h5></h5>
-                                            <i class="fa fa-plus-circle fa-2x"></i>
-                                        </a>
-                                        <p><a href="https://revistas.chapingo.mx/forestales/article/view/r.rchscfa.2020.12.077">Ver más</a></p>
-                                    </div>
+                    <!-- Tarjeta 4 -->
+                    <article class="col-md-4 col-sm-6 col-xs-12 isotopeItem webdesign">
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/ART4.png" alt="" class="img-responsive" />
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <a href="images/portfolio/ART4.png" class="fancybox" title="Descripción del proyecto 4">
+                                        <h5>Proyecto 4</h5>
+                                        <i class="fa fa-plus-circle fa-2x"></i>
+                                    </a>
+                                    <p><a href="https://revistas.chapingo.mx/forestales/article/view/r.rchscfa.2020.12.077">Ver más</a></p>
                                 </div>
                             </div>
-                        </article>
-						
-						 <!-- Tarjeta 6 -->
-                        <article class="col-md-4 isotopeItem print">
-                            <div class="portfolio-item">
-                                <img src="ART7.jpg" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-info">
-                                        <a href="ART7.jpg" class="fancybox" title="Descripción del proyecto 6">
-                                            <h5></h5>
-                                            <i class="fa fa-plus-circle fa-2x"></i>
-                                        </a>
-                                        <p><a href="https://link.springer.com/article/10.1007/s10531-024-02814-z">Ver más</a></p>
-                                    </div>
+                        </div>
+                    </article>
+
+
+
+                    <!-- Tarjeta 6 -->
+                    <article class="col-md-4 col-sm-6 col-xs-12 isotopeItem print">
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/ART7.jpg" alt="" class="img-responsive" />
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <a href="images/portfolio/ART7.jpg" class="fancybox" title="Descripción del proyecto 6">
+                                        <h5>Proyecto 6</h5>
+                                        <i class="fa fa-plus-circle fa-2x"></i>
+                                    </a>
+                                    <p><a href="https://link.springer.com/article/10.1007/s10531-024-02814-z">Ver más</a></p>
                                 </div>
                             </div>
-                        </article>
+                        </div>
+                    </article>
 
-                        <!-- Tarjeta 5 -->
-                        <article class="col-md-4 isotopeItem photography">
-                            <div class="portfolio-item">
-                                <img src="ART6.png" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-info">
-                                        <a href="ART6.png" class="fancybox" title="Descripción del proyecto 5">
-                                            <h5></h5>
-                                            <i class="fa fa-plus-circle fa-2x"></i>
-                                        </a>
-                                        <p><a href="https://rmgir.proyectomesoamerica.org/AtlasMunPDF/2023/23008_SOLIDARIDAD_2023.pdf">Ver más</a></p>
-                                    </div>
+                    <!-- Tarjeta 5 -->
+                    <article class="col-md-4 col-sm-6 col-xs-12 isotopeItem photography">
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/ART6.png" alt="" class="img-responsive" />
+                            <div class="portfolio-desc align-center">
+                                <div class="folio-info">
+                                    <a href="images/portfolio/ART6.png" class="fancybox" title="Descripción del proyecto 5">
+                                        <h5>Proyecto 5</h5>
+                                        <i class="fa fa-plus-circle fa-2x"></i>
+                                    </a>
+                                    <p><a href="https://rmgir.proyectomesoamerica.org/AtlasMunPDF/2023/23008_SOLIDARIDAD_2023.pdf">Ver más</a></p>
                                 </div>
                             </div>
-                        </article>
+                        </div>
+                    </article>					
 
-                       
-
-                    </div>
                 </div>
             </div>
         </div>
