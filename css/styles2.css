@@ -1,0 +1,429 @@
+
+    /* Altura mínima para las tarjetas */
+    .col-md-4.text-center {
+        min-height: 150px; /* Ajusta la altura según sea necesario */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Asegura que el botón esté en la parte inferior de cada tarjeta */
+    .col-md-4.text-center button {
+        margin-top: auto;
+    }
+
+    /* Ocultar listas por defecto */
+    .service-list {
+        display: none;
+    }
+
+
+    /* Asegura que todas las imágenes tengan el mismo tamaño */
+    .portfolio-item img {
+        width: 100%;
+        height: 250px; /* Ajusta la altura según sea necesario */
+        object-fit: cover;
+    }
+
+    .custom-logo {
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+        font-family: 'Arial', sans-serif; /* Cambia la familia de la fuente */
+        color: #0060C0; /* Color de texto personalizado */
+        font-weight: bold; /* Si deseas que el texto sea negrita */
+        text-transform: uppercase; /* Transforma el texto a mayúsculas si lo deseas */
+    }
+
+    .custom-logo b {
+        color: #333; /* Cambia el color de la etiqueta <b> si es necesario */
+    }
+
+    footer {
+        background-color: #333; /* Color de fondo del footer */
+        color: #ffffff; /* Color de texto blanco */
+        padding: 30px 0;
+    }
+
+    footer .footer-col {
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        font-size: 1.1em; /* Tamaño de fuente un poco más grande */
+        margin: 8px 0;
+        line-height: 1.5; /* Espacio entre líneas */
+    }
+
+    footer a {
+        color: #ffffff; /* Color de los enlaces en blanco */
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-logo {
+        max-width: 350px; /* Tamaño del logo */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    /* Estilos responsivos */
+    @media (max-width: 767px) {
+        .footer-col {
+            text-align: center; /* Centra todo el contenido en pantallas pequeñas */
+        }
+    }
+
+    @media (min-width: 768px) {
+        .footer-col {
+            text-align: center; /* Centra todo el contenido en pantallas grandes */
+        }
+    }
+
+    @media (max-width: 768px) {
+        .portfolio-items .col-xs-12 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-item {
+            width: 100%;
+            max-width: 90%;
+        }
+
+        .portfolio-desc {
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    /* Ajuste general para la imagen dentro de cada servicio */
+    .service-img {
+        max-width: 40%;   /* Cambié de 100% a 40% para hacer las imágenes más pequeñas */
+        height: auto;      /* Mantiene la relación de aspecto */
+        border-radius: 8px; /* Bordes redondeados */
+        margin: 0 auto;     /* Centra la imagen */
+    }
+
+    /* Para pantallas más grandes */
+    @media (min-width: 768px) {
+        .service-item {
+            text-align: center;
+        }
+
+        .service-img {
+            max-width: 50%; /* Cambié el tamaño máximo de la imagen en pantallas grandes */
+            margin: 0 auto; /* Centra la imagen */
+        }
+    }
+
+    /* Para pantallas pequeñas */
+    @media (max-width: 767px) {
+        .service-item {
+            text-align: center;
+        }
+
+        .service-img {
+            max-width: 80%; /* Cambié el tamaño de la imagen en pantallas más pequeñas */
+            margin-bottom: 10px; /* Espacio debajo de la imagen */
+        }
+    }
+
+    /* Ajuste de los iconos */
+    .icon-image {
+        margin-bottom: 15px;
+    }
+
+    /* Espaciado entre los servicios */
+    .service-item {
+        margin-bottom: 30px;
+    }
+
+    /* Ajustes para el símbolo de flecha */
+    .arrow-symbol {
+        font-size: 16px;
+        margin-left: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    details[open] .arrow-symbol {
+        transform: rotate(180deg); /* Gira la flecha hacia arriba cuando el texto está desplegado */
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .photo-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Ocupa todo el ancho de la página */
+        height: 80%; /* Altura ajustable */
+        overflow: hidden; /* Evita barras de desplazamiento */
+    }
+
+    .photo-section img {
+        width: 100%; /* La imagen se adapta al ancho disponible */
+        height: auto; /* Mantiene la relación de aspecto */
+        max-height: 100%; /* Asegura que no desborde */
+        object-fit: cover; /* Llena el contenedor sin deformarse */
+    }
+
+    @media (max-width: 768px) {
+        .photo-section img {
+            max-width: 100%; /* Asegura que en móviles no exceda el ancho */
+            height: auto; /* Mantiene proporción */
+        }
+    }
+
+    /* Opcional: ajustes para pantallas más grandes */
+    @media (min-width: 1200px) {
+        .photo-section img {
+            max-width: 100%; /* Opcional: deja algo de espacio en pantallas anchas */
+        }
+    }
+
+.myCarousel {
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.4) hue-rotate(90deg);
+
+}
+
+
+/* Estilos generales */
+body {
+    font-size: 16px; /* Tamaño de fuente base */
+}
+
+/* Ajuste para textos en encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2rem; /* Tamaño relativo para los encabezados */
+}
+
+/* Ajuste de tamaños de texto en pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; /* Ajusta el tamaño de la fuente base */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reducir el tamaño del encabezado en móviles */
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Otros ajustes de textos */
+    .carousel-caption h1 {
+        font-size: 1.8rem; /* Ajustar tamaño del texto en el carrusel */
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+
+    .actionPanel h3 {
+        font-size: 1.3rem; /* Ajustar tamaño del texto en la sección de acción */
+    }
+
+    /* Ajuste de los botones */
+    .btn {
+        font-size: 1rem; /* Tamaño de texto de los botones */
+    }
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 15px; /* Ajuste para tabletas */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Ajuste de encabezados en pantallas medianas */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2rem; /* Ajuste del tamaño del texto en el carrusel */
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .actionPanel h3 {
+        font-size: 1.5rem; /* Ajuste de tamaño de texto en la sección de acción */
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px; /* Tamaño de fuente base para pantallas grandes */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Ajuste de encabezado en pantallas grandes */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: 3rem; /* Ajustar tamaño de texto en el carrusel */
+    }
+
+    .carousel-caption h3 {
+        font-size: 2rem;
+    }
+
+    .actionPanel h3 {
+        font-size: 2rem; /* Ajustar tamaño de texto en la sección de acción */
+    }
+}
+
+
+/* Encabezado */
+header {
+    position: relative;
+    z-index: 5;
+}
+
+/* Título del encabezado */
+header h1 {
+    font-size: 2em; /* Tamaño del título */
+    text-align: center;
+    padding-top: 1px; /* Espacio superior */
+    margin-top: 0; /* Eliminar margen superior */
+}
+
+/* Barra blanca del encabezado */
+header .navbar {
+    background-color: #fff;
+    padding: 1px 0; /* Reduce el padding de la barra */
+}
+
+/* Logo centrado */
+header .logo {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    /* Eliminar el logo */
+    header .logo {
+        display: none; /* Oculta el logo en pantallas pequeñas */
+    }
+
+    /* Hacer el título más pequeño */
+    header h1 {
+        font-size: 1.2em; /* Reduces el tamaño del título */
+        padding-top: 0; /* Elimina el padding superior para que ocupe menos espacio */
+    }
+
+    /* Barra blanca del encabezado */
+    header .navbar {
+        padding: 3px 0; /* Reduce aún más el padding en pantallas pequeñas */
+    }
+}
+
+
+/* Ajustes generales */
+.navbar-header {
+    padding: 0; /* Elimina el padding en el header */
+    margin: 0;  /* Elimina el margen en el header */
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+/* Alineación del logo y título pegados a la hamburguesa */
+.navbar-header .logo {
+    margin-left: 0; /* El logo se pega al borde izquierdo */
+    padding-left: 0; /* Elimina el padding izquierdo */
+    margin-right: 2px; /* Añade un pequeño espacio entre el logo y el título */
+}
+
+.navbar-header h1 {
+    font-size: 36px; /* Tamaño normal para pantallas grandes */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    padding-left: 0; /* Elimina el padding izquierdo */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Ajusta el tamaño del título en pantallas pequeñas */
+    .navbar-header h1 {
+        font-size: 18px; /* Reduce el tamaño a 24px en pantallas pequeñas */
+    }
+
+    /* Alinea el logo y el título a la izquierda sin espacio adicional */
+    .navbar-header {
+        text-align: left; /* Alinea todo a la izquierda */
+        justify-content: flex-start; /* Asegura que los elementos estén alineados a la izquierda */
+    }
+
+    /* Alinea el logo a la izquierda */
+    .navbar-header .logo {
+        margin-left: 0; /* El logo se pega al borde izquierdo */
+        padding-left: 0; /* Elimina el padding izquierdo */
+        margin-right: 0; /* Elimina cualquier margen entre el logo y el título */
+    }
+
+    /* Alinea el título a la izquierda */
+    .navbar-header h1 {
+        float: left; /* El título se coloca a la izquierda */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        padding-left: 0; /* Elimina el padding izquierdo */
+    }
+
+    /* Mantén el botón de hamburguesa en la derecha */
+    .navbar-header .navbar-toggle {
+        float: right;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    .navbar-header h1 {
+        font-size: 14px; /* Reduce aún más el tamaño del título */
+    }
+
+    /* Alinea el logo a la izquierda y quita el margen */
+    .navbar-header .logo {
+        margin-left: 0; /* El logo se pega al borde izquierdo */
+        padding-left: 0; /* Elimina el padding izquierdo */
+    }
+}
+
