@@ -12,6 +12,7 @@
 	<title>Centro Holístico de Estudios Territoriales</title>	
 	<meta name="description" content="">
 	<meta name="author" content="webthemez">    
+	
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->    
@@ -27,9 +28,8 @@
 
 
 <!-- Font Awesome -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900,500" rel="stylesheet">
-
 
 <style>
     /* Altura mínima para las tarjetas */
@@ -50,6 +50,7 @@
         display: none;
     }
 </style>
+
 <style>
     /* Asegura que todas las imágenes tengan el mismo tamaño */
     .portfolio-item img {
@@ -58,158 +59,149 @@
         object-fit: cover;
     }
 </style>
+
 <style>
-    /* Asegura que todas las imágenes tengan el mismo tamaño */
-    .portfolio-item img {
-        width: 100%;
-        height: 250px; /* Ajusta la altura según sea necesario */
-        object-fit: cover;
+    .custom-logo {
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+        font-family: 'Arial', sans-serif; /* Cambia la familia de la fuente */
+        color: #0060C0; /* Color de texto personalizado */
+        font-weight: bold; /* Si deseas que el texto sea negrita */
+        text-transform: uppercase; /* Transforma el texto a mayúsculas si lo deseas */
+    }
+
+    .custom-logo b {
+        color: #333; /* Cambia el color de la etiqueta <b> si es necesario */
     }
 </style>
 <style>
-.custom-logo {
-    font-size: 16px; /* Ajusta el tamaño de la fuente */
-    font-family: 'Arial', sans-serif; /* Cambia la familia de la fuente */
-    color: #0060C0; /* Color de texto personalizado */
-    font-weight: bold; /* Si deseas que el texto sea negrita */
-    text-transform: uppercase; /* Transforma el texto a mayúsculas si lo deseas */
-}
+    footer {
+        background-color: #333; /* Color de fondo del footer */
+        color: #ffffff; /* Color de texto blanco */
+        padding: 30px 0;
+    }
 
-.custom-logo b {
-    color: #333; /* Cambia el color de la etiqueta <b> si es necesario */
-}
-</style>
-
-<style>
-footer {
-    background-color: #333; /* Color de fondo del footer */
-    color: #ffffff; /* Color de texto blanco */
-    padding: 30px 0;
-}
-
-footer .footer-col {
-    margin-bottom: 20px;
-}
-
-footer p {
-    font-size: 1.1em; /* Tamaño de fuente un poco más grande */
-    margin: 8px 0;
-    line-height: 1.5; /* Espacio entre líneas */
-}
-
-footer a {
-    color: #ffffff; /* Color de los enlaces en blanco */
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-@media (min-width: 768px) {
     footer .footer-col {
-        text-align: left;
-    }
-}
-
-@media (max-width: 767px) {
-    footer .footer-col {
-        text-align: center; /* Centra el contenido en pantallas pequeñas */
-    }
-}
-#services {
-    margin-bottom: 100px;
-}
-
-#portfolio {
-    margin-top: 100px;
-}
-</style>
-
-
-<style>
-@media (max-width: 768px) {
-    .portfolio-items .col-xs-12 {
-        display: flex;
-        justify-content: center;
         margin-bottom: 20px;
     }
 
-    .portfolio-item {
-        width: 100%;
-        max-width: 90%;
+    footer p {
+        font-size: 1.1em; /* Tamaño de fuente un poco más grande */
+        margin: 8px 0;
+        line-height: 1.5; /* Espacio entre líneas */
     }
 
-    .portfolio-desc {
+    footer a {
+        color: #ffffff; /* Color de los enlaces en blanco */
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-logo {
+        max-width: 350px; /* Tamaño del logo */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .container {
         text-align: center;
     }
 
-    .portfolio-item img {
-        width: 100%;
-        height: auto;
+    /* Estilos responsivos */
+    @media (max-width: 767px) {
+        .footer-col {
+            text-align: center; /* Centra todo el contenido en pantallas pequeñas */
+        }
     }
-}
 
-</style>
-
-
-<style>
-
-
-/* Ajuste general para la imagen dentro de cada servicio */
-.service-img {
-    max-width: 40%;   /* Cambié de 100% a 60% para hacer las imágenes más pequeñas */
-    height: auto;      /* Mantiene la relación de aspecto */
-    border-radius: 8px; /* Bordes redondeados */
-    margin: 0 auto;     /* Centra la imagen */
-}
-
-/* Para pantallas más grandes */
-@media (min-width: 768px) {
-    .service-item {
-        text-align: center;
+    @media (min-width: 768px) {
+        .footer-col {
+            text-align: center; /* Centra todo el contenido en pantallas grandes */
+        }
     }
-    .service-img {
-        max-width: 50%;  /* Cambié el tamaño máximo de la imagen en pantallas grandes */
-        margin: 0 auto;  /* Centra la imagen */
-    }
-}
-
-/* Para pantallas pequeñas */
-@media (max-width: 767px) {
-    .service-item {
-        text-align: center;
-    }
-    .service-img {
-        max-width: 80%;  /* Cambié el tamaño de la imagen en pantallas más pequeñas */
-        margin-bottom: 10px; /* Espacio debajo de la imagen */
-    }
-}
-
-/* Ajuste de los iconos */
-.icon-image {
-    margin-bottom: 15px;
-}
-
-/* Espaciado entre los servicios */
-.service-item {
-    margin-bottom: 30px;
-}
 </style>
 
 <style>
-/* Ajustes para el símbolo de flecha */
-.arrow-symbol {
-    font-size: 16px;
-    margin-left: 5px;
-    transition: transform 0.3s ease;
-}
+    @media (max-width: 768px) {
+        .portfolio-items .col-xs-12 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
 
-details[open] .arrow-symbol {
-    transform: rotate(180deg); /* Gira la flecha hacia arriba cuando el texto está desplegado */
-}
+        .portfolio-item {
+            width: 100%;
+            max-width: 90%;
+        }
+
+        .portfolio-desc {
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+    }
 </style>
 
+<style>
+    /* Ajuste general para la imagen dentro de cada servicio */
+    .service-img {
+        max-width: 40%;   /* Cambié de 100% a 40% para hacer las imágenes más pequeñas */
+        height: auto;      /* Mantiene la relación de aspecto */
+        border-radius: 8px; /* Bordes redondeados */
+        margin: 0 auto;     /* Centra la imagen */
+    }
+
+    /* Para pantallas más grandes */
+    @media (min-width: 768px) {
+        .service-item {
+            text-align: center;
+        }
+
+        .service-img {
+            max-width: 50%; /* Cambié el tamaño máximo de la imagen en pantallas grandes */
+            margin: 0 auto; /* Centra la imagen */
+        }
+    }
+
+    /* Para pantallas pequeñas */
+    @media (max-width: 767px) {
+        .service-item {
+            text-align: center;
+        }
+
+        .service-img {
+            max-width: 80%; /* Cambié el tamaño de la imagen en pantallas más pequeñas */
+            margin-bottom: 10px; /* Espacio debajo de la imagen */
+        }
+    }
+
+    /* Ajuste de los iconos */
+    .icon-image {
+        margin-bottom: 15px;
+    }
+
+    /* Espaciado entre los servicios */
+    .service-item {
+        margin-bottom: 30px;
+    }
+</style>
+
+<style>
+    /* Ajustes para el símbolo de flecha */
+    .arrow-symbol {
+        font-size: 16px;
+        margin-left: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    details[open] .arrow-symbol {
+        transform: rotate(180deg); /* Gira la flecha hacia arriba cuando el texto está desplegado */
+    }
+</style>
 
 <style>
     body {
@@ -491,9 +483,14 @@ header .logo {
 
 
 
-</style>	
-	
+</style>
+
+
+
+
+
 <meta name="google-site-verification" content="5WpQc9uhBIzX6iS4M4sE_0zgrtzMfDvnJRvKyx62BRE" />
+
 
 </head>
 
@@ -508,8 +505,9 @@ header .logo {
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
 	            </button>
-	        <a href="#" class="navbar-brand scroll-top logo custom-logo">
-                    <img src="images/logo_CHET.png" alt="Logo" style="height: 40px; margin-top: 1px;">
+	            <!-- Logo y texto -->
+	            <a href="#" class="navbar-brand scroll-top logo custom-logo">
+                    <img src="images/logo_CHET.png" alt="Logo" style="height: 30px; margin-top: 1px;">
                     <b>Centro Holístico de Estudios Territoriales</b>
                 </a>
         	</div>
@@ -622,10 +620,13 @@ header .logo {
 	<!--/.container-->
 </section>
 
+
+
+
 <section class="photo-section">
         <img src="images/portfolio/TOP2.jpg" alt="Fotografía Responsiva">
 </section>
-	
+ 
 <section id="Departamentos" class="page-section section appear clearfix">
     <div class="container">
         <div class="heading text-center">
@@ -725,7 +726,7 @@ header .logo {
                 <div class="service-item">
                     <div class="icon-image">
                         <i class="fa fa-database fa-2x circle"></i>
-                        <img src="images\mex2.jpeg" alt="Imagen Servicio 3" class="service-img">
+                        <img src="images\img6.jpeg" alt="Imagen Servicio 3" class="service-img">
                     </div>
                     <h3>Departamento de Tecnologías de la Información Geográfica</h3>
                     <button onclick="toggleList('service-list-3')" class="btn btn-primary">Mostrar/Ocultar Servicios</button>
@@ -787,12 +788,9 @@ header .logo {
                     <h3>Departamento de Capacitación y Transferencia de Tecnologías</h3>
                     <button onclick="toggleList('service-list-6')" class="btn btn-primary">Mostrar/Ocultar Servicios</button>
                     <ul id="service-list-6" style="display: none; list-style-type: none; padding-left: 0;">
-			<strong><li>Fortalecimiento de capacidades para:</li></strong>   
-                        <li>-La interpretación y uso de Información Geográfica</li>
-                        <li>-El uso de Sistemas de Información Geográfica</li>
-                        <li>-El monitoreo de recursos naturales con teledetección en la nube</li>
-                        <li>-El monitoreo atmosférico en tiempo real con Python y datos de acceso público</li>
-			    
+                        <li>-Capacitación para el uso de Sistemas de Información Geográfica</li>
+                        <li>-Capacitación para la interpretación y uso de información Geográfica</li>
+                        <li>-Fortalecimiento de capacidades para el monitoreo de recursos naturales con teledetección</li>
                     </ul>
                 </div>
             </div>
@@ -959,8 +957,7 @@ header .logo {
 <section class="photo-section">
         <img src="images/portfolio/BOTTOM.jpg" alt="Fotografía Responsiva">
 </section>
-  
-<!-- Footer -->
+
 
 <footer>
     <div class="container">
@@ -987,8 +984,8 @@ header .logo {
         </div>
     </div>
 </footer>
-	<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
-	
+
+<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
 
 
 <script>
@@ -1018,3 +1015,4 @@ header .logo {
 
 </body>
 </html>
+
