@@ -208,6 +208,45 @@ details[open] .arrow-symbol {
     transform: rotate(180deg); /* Gira la flecha hacia arriba cuando el texto está desplegado */
 }
 </style>
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .photo-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Ocupa todo el ancho de la página */
+        height: 80%; /* Altura ajustable */
+        overflow: hidden; /* Evita barras de desplazamiento */
+    }
+
+    .photo-section img {
+        width: 100%; /* La imagen se adapta al ancho disponible */
+        height: auto; /* Mantiene la relación de aspecto */
+        max-height: 100%; /* Asegura que no desborde */
+        object-fit: cover; /* Llena el contenedor sin deformarse */
+    }
+
+    @media (max-width: 768px) {
+        .photo-section img {
+            max-width: 100%; /* Asegura que en móviles no exceda el ancho */
+            height: auto; /* Mantiene proporción */
+        }
+    }
+
+    /* Opcional: ajustes para pantallas más grandes */
+    @media (min-width: 1200px) {
+        .photo-section img {
+            max-width: 100%; /* Opcional: deja algo de espacio en pantallas anchas */
+        }
+    }
+</style>
+	
 	
 <meta name="google-site-verification" content="5WpQc9uhBIzX6iS4M4sE_0zgrtzMfDvnJRvKyx62BRE" />
 
@@ -336,7 +375,10 @@ details[open] .arrow-symbol {
 	<!--/.container-->
 </section>
 
-
+<section class="photo-section">
+        <img src="images/portfolio/TOP2.jpg" alt="Fotografía Responsiva">
+</section>
+	
 <section id="Departamentos" class="page-section section appear clearfix">
     <div class="container">
         <div class="heading text-center">
@@ -667,7 +709,9 @@ details[open] .arrow-symbol {
     </div>
 </section>
 
-
+<section class="photo-section">
+        <img src="images/portfolio/BOTTOM.jpg" alt="Fotografía Responsiva">
+</section>
   
 <!-- Footer -->
 
