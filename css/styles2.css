@@ -427,3 +427,94 @@ header .logo {
     }
 }
 
+
+.whatsapp-logo {
+    background-color: #25d366;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.whatsapp-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-logo a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.whatsapp-logo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.google-form-button {
+    background-color: #4285F4; /* Azul de Google */
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.google-form-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.google-form-button a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.google-form-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+.email-button {
+    background-color: #AD1F1D; /* Rojo de Google */
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.email-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.email-button a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.email-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
